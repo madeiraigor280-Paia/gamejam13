@@ -94,8 +94,9 @@ function input_player()
 	}
 	else
 	{
-		if (_jump && qtd_pulos == 1)
+		if (_jump && (qtd_pulos == 1 || qtd_pulos == 2))
 		{
+			qtd_pulos = 1;
 			velv = forca_pulo;
 			qtd_pulos--;		
 		}
