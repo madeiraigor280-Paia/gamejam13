@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Mask Dude",
-    "path":"folders/Sprites/Player/Mask Dude.yy",
+    "name":"Inimigos",
+    "path":"folders/Sprites/Inimigos.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
