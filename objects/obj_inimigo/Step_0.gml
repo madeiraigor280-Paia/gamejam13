@@ -75,7 +75,10 @@ if (_chao)
 	}
 	else
 	{
-		sprite_index = spr_inimigo_idle	
+		if (image_index >= image_number-1)
+		{
+			sprite_index = spr_inimigo_idle
+		}
 		
 	}
 	
@@ -124,8 +127,9 @@ if (levou_dano && !invencivel)
 	}
 	else
 	{
-		alarm[0] = room_speed * 2;
+		alarm[0] = room_speed;
 		sprite_index = spr_inimigo_hit;
+		image_index = 0
 		
 	}
 }

@@ -37,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_player",
-    "path":"sprites/spr_player/spr_player.yy",
+    "name":"spr_frog_idle",
+    "path":"sprites/spr_frog_idle/spr_frog_idle.yy",
   },
   "spriteMaskId":{
     "name":"spr_frog_idle",

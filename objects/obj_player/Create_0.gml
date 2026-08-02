@@ -77,6 +77,15 @@ function input_player()
 		
 		if (velv > 0)
 		{
+			var _inimigo = instance_place(x, y, obj_inimigo_pai);
+			
+			if (_inimigo)
+			{
+				_inimigo.levou_dano = true;
+				velv = forca_pulo;
+				
+			}
+			
 			sprite_index = sprite_fall
 			
 		}
@@ -100,7 +109,7 @@ function input_player()
 			velv = forca_pulo;
 			qtd_pulos--;		
 		}
-		velv += gravidade
+		//velv += gravidade	
 		
 		//Códico do wall jump
 		if (_na_parede)

@@ -1,6 +1,14 @@
 if (instance_exists(obj_player))
 {
-	var _target = obj_player;
+	if (global.player1)
+	{
+		var _target = obj_player;
+	}
+	else
+	{
+		var _target = obj_clone_player;
+		
+	}
 	
 	x = lerp(x, _target.x, 0.75);
 	y = lerp(y, _target.y, 0.75);
