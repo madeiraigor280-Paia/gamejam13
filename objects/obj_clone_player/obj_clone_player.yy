@@ -12,12 +12,12 @@
   "name":"obj_clone_player",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Player",
+    "path":"folders/Objetos/Player.yy",
   },
   "parentObjectId":{
-    "name":"obj_colisao",
-    "path":"objects/obj_colisao/obj_colisao.yy",
+    "name":"obj_pai_player",
+    "path":"objects/obj_pai_player/obj_pai_player.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

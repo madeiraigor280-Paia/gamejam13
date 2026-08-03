@@ -13,12 +13,16 @@ if (move_chekpoint)exit;
 if (global.player1 == true) 
 {
 	image_blend = c_grey
+	muda_sprite(spr_frog_idle)
+	velh = 0;
+	velv += gravidade;
 	exit;
 	
 }
 else
 {
 	image_blend = c_white
+	
 	
 }
 

@@ -1,7 +1,19 @@
+#region variaveis que não pode sumir
+
 var _no_chao = place_meeting(x, y + 1, obj_bloco)
 
 
 
+#endregion
+
+//Coloquei aqui para contar a gravidade mesmo sem o modo
+//if (!_no_chao)
+//{
+//	velv += gravidade	
+	
+//}
+
+if (move_chekpoint)exit;
 
 //Coloquei aqui para contar a gravidade mesmo sem o modo
 if (!_no_chao)
@@ -11,23 +23,36 @@ if (!_no_chao)
 }
 
 
+
+
+
 if (global.player1 == false) 
 {
 	image_blend = c_grey
+	
+	muda_sprite(spr_frog_idle)
+	velh = 0;
+	velv += gravidade;
+	
 	exit;
+	
+	
 	
 }
 else
 {
 	image_blend = c_white;
+	
+	
+	
 }
 
-if (move_chekpoint)exit;
+
 
 input_player()
 
-var _dire = point_direction(x, y, mouse_x, mouse_y)
 
+var _dire = point_direction(x, y, mouse_x, mouse_y)
 
 
 //Se nossa direção for igual a 90 ou 270, então retorna verdadeiro
@@ -55,6 +80,22 @@ if (!_na_parede)
 
 if (keyboard_check_pressed(ord("K")))
 {
-	global.player1 = !global.player1	
+	if (instance_exists(obj_clone_player))
+	{
+		global.player1 = !global.player1;
+	}
+	
+}
+
+if (keyboard_check_released(ord("E")))
+{
+	global.tiro_clone = !global.tiro_clone;
+		
+}
+
+
+if (keyboard_check_released(ord("Q")))
+{
+	room_restart()	
 	
 }

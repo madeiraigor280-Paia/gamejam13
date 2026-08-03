@@ -6,8 +6,14 @@ if (instance_exists(obj_player))
 	}
 	else
 	{
-		var _target = obj_clone_player;
-		
+		if (instance_exists(obj_clone_player))
+		{
+			var _target = obj_clone_player;
+		}
+		else
+		{
+			var _target = obj_player;
+		}
 	}
 	
 	x = lerp(x, _target.x, 0.75);

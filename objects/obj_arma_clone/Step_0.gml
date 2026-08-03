@@ -1,4 +1,3 @@
-if (global.player1 == true) exit
 
 if (instance_exists(obj_clone_player))
 {
@@ -9,6 +8,9 @@ if (instance_exists(obj_clone_player))
 	
 	
 }
+
+if (global.player1 == true) exit;
+
 
 var _dire = point_direction(x, y, mouse_x, mouse_y)
 

@@ -1,4 +1,4 @@
-if (global.player1 == false) exit
+
 
 if (instance_exists(obj_player))
 {
@@ -9,7 +9,7 @@ if (instance_exists(obj_player))
 	
 	
 }
-
+if (global.player1 == false) exit
 var _dire = point_direction(x, y, mouse_x, mouse_y)
 
 image_angle = _dire
@@ -37,20 +37,20 @@ if (_click)
 	
 	
 	
-	if (global.player1 && clonei == false)
+	if (global.player1 && clonei == false && global.tiro_clone)
 	{
 		
 			var _tiro = instance_create_layer(_xx, _yy, "Instances", obj_tiro_2)
 			_tiro.direction = _dire
 			clonei = true
 	}
-		//else
-		//{
+	else
+	{
 	
-		//	var _tiro = instance_create_layer(_xx, _yy, "Instances", obj_tiro_2)
-		//	_tiro.direction = _dire
+		var _tiro = instance_create_layer(_xx, _yy, "Instances", obj_tiro_1)
+		_tiro.direction = _dire
 		
-		//}
+	}
 	
 	
 }

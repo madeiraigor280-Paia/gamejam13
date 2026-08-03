@@ -3,7 +3,7 @@ event_inherited();
 
 
 
-velocidade = 5;
+velocidade = 4;
 gravidade = .3;
 
 

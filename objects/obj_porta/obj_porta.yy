@@ -1,23 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"obj_player",
+  "%Name":"obj_porta",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_hit","path":"objects/obj_hit/obj_hit.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_player",
+  "name":"obj_porta",
   "overriddenProperties":[],
   "parent":{
-    "name":"Player",
-    "path":"folders/Objetos/Player.yy",
+    "name":"Objetos",
+    "path":"folders/Objetos.yy",
   },
   "parentObjectId":{
-    "name":"obj_pai_player",
-    "path":"objects/obj_pai_player/obj_pai_player.yy",
+    "name":"obj_bloco",
+    "path":"objects/obj_bloco/obj_bloco.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -37,12 +35,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_frog_idle",
-    "path":"sprites/spr_frog_idle/spr_frog_idle.yy",
+    "name":"spr_bloco",
+    "path":"sprites/spr_bloco/spr_bloco.yy",
   },
-  "spriteMaskId":{
-    "name":"spr_frog_idle",
-    "path":"sprites/spr_frog_idle/spr_frog_idle.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }
