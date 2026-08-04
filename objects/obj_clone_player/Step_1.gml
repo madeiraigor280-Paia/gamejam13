@@ -1,3 +1,4 @@
+
 if (move_chekpoint)
 {
 	velh = 0;
@@ -5,6 +6,7 @@ if (move_chekpoint)
 	
 	if (image_index >= image_number-1)
 	{
+		
 		var _to_start = true;
 		
 		if (instance_exists(obj_checkpoint))
@@ -35,6 +37,7 @@ if (move_chekpoint)
 		if (image_index >= image_number-1)
 		{
 			move_chekpoint = false
+			
 		}
 	}
 	

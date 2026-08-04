@@ -7,4 +7,5 @@ if (move_chekpoint == false)
 	muda_sprite(spr_player_die)
 	move_chekpoint = true
 	screenshake(5)
+	aumenta_radiacao(25)
 }

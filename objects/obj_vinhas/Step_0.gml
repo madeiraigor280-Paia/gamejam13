@@ -22,3 +22,9 @@ if (instance_exists(obj_clone_player))
 	}
 	
 }
+
+if (cresco_sozinho)
+{
+		image_yscale = lerp(image_yscale, cresco_ate, 0.1);
+	
+}

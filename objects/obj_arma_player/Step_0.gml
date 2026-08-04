@@ -40,22 +40,30 @@ if (_click)
 	if (global.player1 && clonei == false && global.tiro_clone)
 	{
 		
-			var _tiro = instance_create_layer(_xx, _yy, "Instances", obj_tiro_2)
-			_tiro.direction = _dire
-			clonei = true
-	}
-	else
-	{
-	
-		var _tiro = instance_create_layer(_xx, _yy, "Instances", obj_tiro_1)
-		_tiro.direction = _dire
-		
+			
+			if (cooldown <= 0)
+			{
+				var _tiro = instance_create_layer(_xx, _yy, "Instances", obj_tiro_2)
+				_tiro.direction = _dire
+				cooldown = 500
+			}
+			
+			
+			
+			if (instance_exists(obj_clone_player))
+			{
+				clonei = true
+				
+				
+			}
 	}
 	
 	
 }
-	
-	
+
+
+cooldown--;
+show_debug_message(cooldown)	
 	
 	
 

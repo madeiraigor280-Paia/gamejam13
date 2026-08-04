@@ -2,7 +2,6 @@
 event_inherited();
 
 
-
 velocidade = 5;
 gravidade = .3;
 
@@ -58,11 +57,11 @@ function input_player()
 			
 		}
 	}
-	else if (_na_parede)
-	{
-		sprite_index = sprite_wall_jump
+	//else if (_na_parede)
+	//{
+	//	sprite_index = sprite_wall_jump
 		
-	}
+	//}
 	else{
 		
 		if (qtd_pulos == (max_pulos-1))
@@ -93,36 +92,36 @@ function input_player()
 	
 	if (_no_chao)
 	{
-		qtd_pulos = max_pulos;
-		if (_jump)
-		{
-			velv = forca_pulo	
-			qtd_pulos--;
-		}
+		//qtd_pulos = max_pulos;
+		//if (_jump)
+		//{
+		//	velv = forca_pulo	
+		//	qtd_pulos--;
+		//}
 		
 	}
 	else
 	{
-		if (_jump && (qtd_pulos == 1 || qtd_pulos == 2))
-		{
-			qtd_pulos = 1;
-			velv = forca_pulo;
-			qtd_pulos--;		
-		}
+		//if (_jump && (qtd_pulos == 1 || qtd_pulos == 2))
+		//{
+		//	qtd_pulos = 1;
+		//	velv = forca_pulo;
+		//	qtd_pulos--;		
+		//}
 		//velv += gravidade
 		
-		//Códico do wall jump
-		if (_na_parede)
-		{
-			velv = 1;
+		////Códico do wall jump
+		//if (_na_parede)
+		//{
+		//	velv = 1;
 			
-			if (_jump)
-			{
-				velv = forca_pulo;
-				velh = (10 * _xDirection) * -1;
-			}
+		//	if (_jump)
+		//	{
+		//		velv = forca_pulo;
+		//		velh = (10 * _xDirection) * -1;
+		//	}
 			
-		}
+		//}
 		
 	}
 	

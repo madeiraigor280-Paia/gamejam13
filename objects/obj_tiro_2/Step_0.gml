@@ -1,22 +1,18 @@
 
 var _no_chao = place_meeting(x, y + 1, obj_bloco)
-if (!_no_chao)
-{
-	velv += gravidade
-}
-else
-{
-	var _left, _right, _jump, _xDirection;
-	
-	//_left = keyboard_check(ord("A"))
-	//_right = keyboard_check(ord("D"))
-	
-	velh = lerp(velh, 0, .1)	
-}
+var _na_parede = place_meeting(x +(image_xscale), y, obj_bloco)
 
-if (velh <= 0.1 && !criei_clone)
+
+if (_no_chao or _na_parede && !criei_clone)
 {
-	muda_sprite(spr_player_enter)
+	
+	speed = 0;
+	
+	if (!mudei)
+	{
+		muda_sprite(spr_player_enter)
+		mudei = true
+	}	
 	
 	
 	if (sprite_index == spr_player_enter)

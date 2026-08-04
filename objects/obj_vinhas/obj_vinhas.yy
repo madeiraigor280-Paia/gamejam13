@@ -32,13 +32,14 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"cresco_ate","filters":[],"listItems":[],"multiselect":false,"name":"cresco_ate","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"2","varType":1,},
+    {"$GMObjectProperty":"v2","%Name":"cresco_sozinho","filters":[],"listItems":[],"multiselect":false,"name":"cresco_sozinho","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite56",
-    "path":"sprites/Sprite56/Sprite56.yy",
+    "name":"spr_vinhas",
+    "path":"sprites/spr_vinhas/spr_vinhas.yy",
   },
   "spriteMaskId":null,
   "visible":true,

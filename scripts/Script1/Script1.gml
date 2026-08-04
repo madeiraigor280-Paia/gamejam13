@@ -20,3 +20,9 @@ function screenshake(_shake)
 	obj_shake.shake = _shake
 	
 }
+
+function aumenta_radiacao(_radiacao)
+{
+	global.radiacao += _radiacao;	
+	
+}
