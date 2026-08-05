@@ -12,6 +12,9 @@ function transicao_simples(_room)
 {
 	var _transicao = instance_create_layer(0, 0, layer, obj_transicao)
 	_transicao.rm_destino = _room;
+	global.player1 = true;
+
+	global.tiro_clone = true;
 }
 
 function screenshake(_shake)

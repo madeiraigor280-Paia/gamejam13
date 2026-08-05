@@ -5,6 +5,12 @@ event_inherited();
 velocidade = 5;
 gravidade = .3;
 
+if (instance_exists(obj_arma_player))
+{
+	obj_arma_player.ja_clonei_na_fase = true	
+}
+
+me_destruo = false
 
 forca_pulo = -7;
 

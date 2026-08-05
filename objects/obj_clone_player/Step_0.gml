@@ -1,5 +1,7 @@
 var _no_chao = place_meeting(x, y + 1, obj_bloco)
 
+
+
 //Coloquei aqui para contar a gravidade mesmo sem o modo
 if (!_no_chao)
 {
@@ -13,7 +15,14 @@ if (move_chekpoint)exit;
 if (global.player1 == true) 
 {
 	image_blend = c_grey
-	muda_sprite(spr_frog_idle)
+	if (me_destruo == false)
+	{
+		muda_sprite(spr_frog_idle)
+	}
+	else
+	{
+		muda_sprite(spr_player_die)	
+	}
 	velh = 0;
 	velv += gravidade;
 	exit;
@@ -21,10 +30,12 @@ if (global.player1 == true)
 }
 else
 {
-	image_blend = c_white
+	image_blend = c_orange
 	
 	
 }
+
+
 
 
 input_player()
@@ -62,3 +73,5 @@ if (keyboard_check_pressed(ord("K")))
 	global.player1 = !global.player1	
 	
 }
+
+

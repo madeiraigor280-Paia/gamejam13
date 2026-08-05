@@ -41,7 +41,7 @@ if (_click)
 	{
 		
 			
-			if (cooldown <= 0)
+			if (cooldown <= 0 && ja_clonei_na_fase == false)
 			{
 				var _tiro = instance_create_layer(_xx, _yy, "Instances", obj_tiro_2)
 				_tiro.direction = _dire
@@ -63,7 +63,7 @@ if (_click)
 
 
 cooldown--;
-show_debug_message(cooldown)	
+
 	
 	
 

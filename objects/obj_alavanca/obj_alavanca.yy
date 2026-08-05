@@ -10,8 +10,8 @@
   "name":"obj_alavanca",
   "overriddenProperties":[],
   "parent":{
-    "name":"Level",
-    "path":"folders/Objetos/Level.yy",
+    "name":"Puzzle",
+    "path":"folders/Objetos/Puzzle.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -27,7 +27,9 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v2","%Name":"ligo_a_porta","filters":[],"listItems":[],"multiselect":false,"name":"ligo_a_porta","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"True","varType":3,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,

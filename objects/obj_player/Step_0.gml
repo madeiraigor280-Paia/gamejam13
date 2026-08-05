@@ -24,7 +24,7 @@ if (!_no_chao)
 
 
 
-
+show_debug_message(global.player1)
 
 if (global.player1 == false) 
 {
@@ -99,3 +99,42 @@ if (keyboard_check_released(ord("Q")))
 	room_restart()	
 	
 }
+
+if (keyboard_check_pressed(ord("T")))
+{
+	if (instance_exists(obj_clone_player))
+	{
+		
+		obj_clone_player.me_destruo = true
+		if (instance_exists(obj_arma_player))
+		{
+			obj_arma_player.ja_clonei_na_fase = false	
+		}
+		
+	}
+	
+	
+}
+
+//Empurrando blocos
+var _push_list = ds_list_create();
+
+var _is_block_h = instance_place_list(x + velh, y, obj_caixa, _push_list, false);
+
+if (_is_block_h){
+	if (ds_list_size(_push_list) > 0){
+		for(var i = 0; i < ds_list_size(_push_list); i++){
+			var block = _push_list[|i]; //ds_list_find_value
+			with(block){
+				if (!place_meeting(x + other.velh, y, obj_bloco)){
+				x += other.velh;
+				}
+				
+			}
+		}
+		
+	}
+		
+}
+
+ds_list_destroy(_push_list)

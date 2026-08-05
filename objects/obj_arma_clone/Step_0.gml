@@ -2,10 +2,16 @@
 if (instance_exists(obj_clone_player))
 {
 	
+	image_alpha = 1
 	x = obj_clone_player.x;
 	y = obj_clone_player.y;
 	
 	
+	
+}
+else
+{
+	image_alpha = 0
 	
 }
 
@@ -40,8 +46,12 @@ if (_click)
 	
 	
 	
-		var _tiro = instance_create_layer(_xx, _yy, "Instances", obj_tiro_1)
-		_tiro.direction = _dire
+		if (cooldown <= 0)
+		{
+			var _tiro = instance_create_layer(_xx, _yy, "Instances", obj_tiro_1)
+			_tiro.direction = _dire
+			cooldown = 100
+		}
 
 	
 	
@@ -52,3 +62,4 @@ if (_click)
 	
 }
 
+cooldown--;
