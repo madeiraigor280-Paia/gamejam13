@@ -1,5 +1,6 @@
-if (instance_exists(obj_portal) && ligo_a_porta && ativo_a_porta)
+if (instance_exists(obj_porta) && ligo_a_porta && ativo_a_porta)
 {
-	obj_portal.pode_iniciar = true
+	obj_porta.estado = "desligando";
+	ativo_a_porta = false
 	
 }

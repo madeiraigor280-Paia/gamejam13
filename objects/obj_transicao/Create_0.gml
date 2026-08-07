@@ -1,3 +1,3 @@
 alpha = 0;
 lv_start = false;
-rm_destino = Room1;
+rm_destino = level1;

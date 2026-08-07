@@ -4,4 +4,4 @@ global.tiro_clone = true;
 
 global.radiacao = 0
 
-global.sala_segura = Room1
+global.sala_segura = level1

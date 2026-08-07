@@ -108,7 +108,10 @@ if (keyboard_check_pressed(ord("T")))
 		obj_clone_player.me_destruo = true
 		if (instance_exists(obj_arma_player))
 		{
-			obj_arma_player.ja_clonei_na_fase = false	
+			obj_arma_player.ja_clonei_na_fase = false
+			clonei = false
+			global.tiro_clone = true
+			
 		}
 		
 	}

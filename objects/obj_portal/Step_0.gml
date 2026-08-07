@@ -24,8 +24,9 @@ if (pode_iniciar && me_criei == false)
 
 var _player = instance_place(x, y, obj_player)
 var _espaco = keyboard_check_pressed(vk_space)
+var _clone = instance_place(x, y, obj_clone_player)
 
-if (_player)
+if (_player or _clone)
 {
 	if (pode_iniciar && sprite_index == spr_portal_idle)
 	{
