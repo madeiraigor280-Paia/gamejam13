@@ -78,7 +78,8 @@ if (!_na_parede)
 	}
 }
 
-if (keyboard_check_pressed(ord("K")))
+//Trocar de modo
+if (keyboard_check_pressed(ord("G")))
 {
 	if (instance_exists(obj_clone_player))
 	{
@@ -87,19 +88,21 @@ if (keyboard_check_pressed(ord("K")))
 	
 }
 
+//Trocar modo de tiro
 if (keyboard_check_released(ord("E")))
 {
 	global.tiro_clone = !global.tiro_clone;
 		
 }
 
-
+//Reiniciar a fase
 if (keyboard_check_released(ord("Q")))
 {
 	room_restart()	
 	
 }
 
+//Destruindo o clone
 if (keyboard_check_pressed(ord("T")))
 {
 	if (instance_exists(obj_clone_player))

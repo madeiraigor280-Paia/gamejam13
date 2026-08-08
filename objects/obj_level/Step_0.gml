@@ -5,3 +5,8 @@ if (global.radiacao >= 100)
 	global.radiacao = 0
 	
 }
+
+if (keyboard_check_pressed(ord("H")))
+{
+	global.mostra_hud = !global.mostra_hud	
+}

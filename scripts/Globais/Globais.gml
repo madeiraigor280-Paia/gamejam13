@@ -5,3 +5,5 @@ global.tiro_clone = true;
 global.radiacao = 0
 
 global.sala_segura = level1
+
+global.mostra_hud = false
