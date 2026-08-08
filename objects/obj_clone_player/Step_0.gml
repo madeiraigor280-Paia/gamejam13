@@ -69,7 +69,7 @@ if (!_na_parede)
 
 if (keyboard_check_pressed(ord("G")))
 {
-	show_message("kkkk")
+	
 	global.player1 = !global.player1	
 	
 }

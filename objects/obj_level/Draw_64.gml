@@ -28,3 +28,5 @@ else
 	draw_text(60, 725, "Mostrar HUD (H) ")
 		
 }
+
+draw_set_font(-1)

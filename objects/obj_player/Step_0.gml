@@ -23,8 +23,16 @@ if (!_no_chao)
 }
 
 
+//Reiniciar a fase
+if (keyboard_check_released(ord("Q")))
+{
+	room_restart()
+		global.player1 = true;
 
-show_debug_message(global.player1)
+	global.tiro_clone = true;
+	
+}
+
 
 if (global.player1 == false) 
 {
@@ -96,18 +104,13 @@ if (keyboard_check_pressed(ord("G")))
 }
 
 //Trocar modo de tiro
-if (keyboard_check_released(ord("E")))
-{
-	global.tiro_clone = !global.tiro_clone;
+//if (keyboard_check_released(ord("E")))
+//{
+//	global.tiro_clone = !global.tiro_clone;
 		
-}
+//}
 
-//Reiniciar a fase
-if (keyboard_check_released(ord("Q")))
-{
-	room_restart()	
-	
-}
+
 
 //Destruindo o clone
 if (keyboard_check_pressed(ord("T")))
@@ -120,7 +123,7 @@ if (keyboard_check_pressed(ord("T")))
 		{
 			obj_arma_player.ja_clonei_na_fase = false
 			clonei = false
-			global.tiro_clone = true
+			//global.tiro_clone = true
 			
 		}
 		
@@ -155,3 +158,15 @@ ds_list_destroy(_push_list)
 var _layer_hspeed = lerp(velh, 0.3, 0.1)
 
 layer_hspeed("bg_perto", velh / 10)
+
+//Deixando o jogo em tela cheia quando eu apertar o F11
+//Ou tirar de tela cheia
+if (keyboard_check_pressed(vk_f11))
+{
+    //Pegando se a tela ta cheia
+    var _full = window_get_fullscreen();
+    
+    //Deixando a tela cheia se ela não esta cheia
+    //Ou restaurando a tela se ela esta cheia
+    window_set_fullscreen(!_full);
+}

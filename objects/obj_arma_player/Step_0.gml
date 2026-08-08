@@ -37,7 +37,7 @@ if (_click)
 	
 	
 	
-	if (global.player1 && clonei == false && global.tiro_clone)
+	if (global.player1 && clonei == false)
 	{
 		
 			
