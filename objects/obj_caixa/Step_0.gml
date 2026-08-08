@@ -19,8 +19,10 @@ switch(estado)
 		{
 			//var _dir
 	
-	
-				velh += velh.obj_player
+				if (_player.velh != 0)
+				{
+					//velh += velh.obj_player
+				}
 	
 	
 		}
@@ -53,7 +55,7 @@ switch(estado)
 	{
 		if (criei_item == false)
 		{
-			var _item = obj_mola
+			
 		
 			
 			instance_create_layer(x, y - 20, layer, obj_key)

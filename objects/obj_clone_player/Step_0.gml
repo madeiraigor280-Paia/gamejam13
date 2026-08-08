@@ -14,7 +14,9 @@ if (move_chekpoint)exit;
 
 if (global.player1 == true) 
 {
+	
 	image_blend = c_grey
+	
 	if (me_destruo == false)
 	{
 		muda_sprite(spr_frog_idle)
@@ -31,6 +33,10 @@ if (global.player1 == true)
 else
 {
 	image_blend = c_orange
+	troquei = false
+	
+
+
 	
 	
 }
@@ -67,12 +73,26 @@ if (!_na_parede)
 	}
 }
 
-if (keyboard_check_pressed(ord("G")))
-{
+//if (keyboard_check_pressed(ord("G")) && troquei == false)
+//{
 	
-	global.player1 = !global.player1	
+//	global.player1 = !global.player1
+//	troquei = true
 	
-}
+	
+//}
+
+	//Trocar de modo
+//if (keyboard_check_pressed(ord("G")))
+//{
+//	if (instance_exists(obj_player))
+//	{
+		
+//		global.player1 = true
+//	}
+	
+//}
+
 
 
 //Empurrando blocos
@@ -100,3 +120,4 @@ ds_list_destroy(_push_list)
 
 
 layer_hspeed("bg_perto", velh / 10)
+

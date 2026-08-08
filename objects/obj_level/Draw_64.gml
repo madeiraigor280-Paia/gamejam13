@@ -9,8 +9,8 @@ draw_set_font(-1)
 
 if (global.mostra_hud)
 {
-	draw_sprite_ext(spr_alfabeto_e, 0, 25, 710, 3, 3, 0, c_white, 1);
-	draw_text(65, 725, "Troca modo de tiro")
+	draw_sprite_ext(spr_alfabeto_h, 0, 30, 745, 3, 3, 0, c_white, 1);
+	draw_text(65, 725, "Desabilita Hud (H) ")
 	
 	draw_sprite_ext(spr_alfabeto_q, 0, 45, 690, 3, 3, 0,  c_white, 1)
 	draw_text(80, 670, "Reseta level")

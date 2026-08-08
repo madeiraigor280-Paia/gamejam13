@@ -32,4 +32,3 @@ if (_no_chao or _na_parede or _no_teto && !criei_clone)
 	//}
 }
 
-show_debug_message(image_index)

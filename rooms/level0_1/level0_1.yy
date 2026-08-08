@@ -36,6 +36,7 @@
     {"name":"inst_55E1164","path":"rooms/level0_1/level0_1.yy",},
     {"name":"inst_48C61DBF","path":"rooms/level0_1/level0_1.yy",},
     {"name":"inst_33570889","path":"rooms/level0_1/level0_1.yy",},
+    {"name":"inst_999C9BB","path":"rooms/level0_1/level0_1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -77,6 +78,7 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_portal","path":"objects/obj_portal/obj_portal.yy",},"propertyId":{"name":"destino","path":"objects/obj_portal/obj_portal.yy",},"resource":{"name":"level0_2","path":"rooms/level0_2/level0_2.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"level0_2",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":960.0,"y":288.0,},
         {"$GMRInstance":"v4","%Name":"inst_33570889","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_33570889","objectId":{"name":"obj_timer","path":"objects/obj_timer/obj_timer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
+        {"$GMRInstance":"v4","%Name":"inst_999C9BB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_999C9BB","objectId":{"name":"obj_checkpoint","path":"objects/obj_checkpoint/obj_checkpoint.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":288.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"tl_terra","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"tl_terra","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":21,"SerialiseWidth":63,"TileCompressedData":[
           -62,4,2,34,23,-61,-2147483648,2,48,23,-61,-2147483648,2,62,23,-61,-2147483648,2,48,23,-61,-2147483648,

@@ -94,14 +94,14 @@ if (!_na_parede)
 }
 
 //Trocar de modo
-if (keyboard_check_pressed(ord("G")))
-{
-	if (instance_exists(obj_clone_player))
-	{
-		global.player1 = !global.player1;
-	}
+//if (keyboard_check_pressed(ord("G")))
+//{
+//	if (instance_exists(obj_clone_player))
+//	{
+//		global.player1 = !global.player1;
+//	}
 	
-}
+//}
 
 //Trocar modo de tiro
 //if (keyboard_check_released(ord("E")))
@@ -122,7 +122,8 @@ if (keyboard_check_pressed(ord("T")))
 		if (instance_exists(obj_arma_player))
 		{
 			obj_arma_player.ja_clonei_na_fase = false
-			clonei = false
+			obj_arma_player.clonei = false
+			
 			//global.tiro_clone = true
 			
 		}
@@ -137,12 +138,12 @@ var _push_list = ds_list_create();
 
 var _is_block_h = instance_place_list(x + velh, y, obj_caixa, _push_list, false);
 
-if (_is_block_h){
+if (_is_block_h and _no_chao){
 	if (ds_list_size(_push_list) > 0){
 		for(var i = 0; i < ds_list_size(_push_list); i++){
 			var block = _push_list[|i]; //ds_list_find_value
 			with(block){
-				if (!place_meeting(x + other.velh, y, obj_bloco)){
+				if (!place_meeting(x + other.velh, y, obj_bloco and velh != 0)){
 				x += other.velh;
 				}
 				
@@ -170,3 +171,5 @@ if (keyboard_check_pressed(vk_f11))
     //Ou restaurando a tela se ela esta cheia
     window_set_fullscreen(!_full);
 }
+
+show_debug_message(global.player1)

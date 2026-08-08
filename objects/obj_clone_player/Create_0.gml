@@ -12,6 +12,8 @@ if (instance_exists(obj_arma_player))
 
 me_destruo = false
 
+troquei = false
+
 forca_pulo = -7;
 
 qtd_pulos = 0;
