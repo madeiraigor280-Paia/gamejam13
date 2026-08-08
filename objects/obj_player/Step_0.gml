@@ -48,6 +48,13 @@ else
 }
 
 
+if (global.dialogo)
+{
+	velh = 0
+	velv = 0;
+	exit;
+	
+}
 
 input_player()
 

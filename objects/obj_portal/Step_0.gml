@@ -28,6 +28,7 @@ var _clone = instance_place(x, y, obj_clone_player)
 
 if (_player or _clone)
 {
+	faco_tecla = true
 	if (pode_iniciar && sprite_index == spr_portal_idle)
 	{
 		if (_tecla)
@@ -38,5 +39,10 @@ if (_player or _clone)
 		
 		}
 	}
+	
+}
+else
+{
+	faco_tecla = false	
 	
 }

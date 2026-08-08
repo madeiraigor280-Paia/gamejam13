@@ -2,10 +2,10 @@
   "$GMSequence":"v1",
   "%Name":"Sequence2",
   "autoRecord":true,
-  "backdropHeight":768,
+  "backdropHeight":324,
   "backdropImageOpacity":0.5,
   "backdropImagePath":"",
-  "backdropWidth":1366,
+  "backdropWidth":600,
   "backdropXOffset":0.0,
   "backdropYOffset":0.0,
   "events":{
