@@ -5,22 +5,25 @@ function scr_textos(){
 		
 		//Aqui pede 4 argumentos, um texto, um retrato, o lado e o nome
 		//Tentar colocar a voz depois
-		ds_grid_add_text("Olá, nunca vi você, o que faz aqui ?", spr_dialogo, 0, "Personagem 1");
-		ds_grid_add_text("Não sei, me tacaram aqui, um cara misterioso que nunca  vi", spr_frog_dialogo, 1, "Personagem 2");
-		ds_grid_add_text("Bem, voce teve o mesmo destino de todos, não mudou nada", spr_dialogo, 0, "Personagem 1");
-		ds_grid_add_text("Que, como assim 'todos ?'", spr_frog_dialogo, 1, "Personagem 2");
-			add_op("Quem são essas pessoas ?", "Resposta 1")
-			add_op("Você mora aqui ?", "Resposta 2")
+		ds_grid_add_text("Olá, o que você faz aqui, a humanidade já acabou e só tem você aqui", spr_dialogo, 0, "Zé Zezin");
+		ds_grid_add_text("Eu estou tentando sobreviver nesse mundo, mas acho que é só questão de tempo", spr_frog_dialogo, 1, "Player");
+		ds_grid_add_text("Bem, depois de um cara deixou o café cair no reator nuclear e explodir tudo eu acho que não tem mais salvação", spr_dialogo, 0, "Zé Zezin");
+		ds_grid_add_text("Que, como assim explodiram tudo ?", spr_frog_dialogo, 1, "Player");
+		ds_grid_add_text("Simples, com apenas um erro, surgiram outros, não tem como ganhar do efeito borboleta da natureza", spr_frog_dialogo, 0, "Zé Zezin");
+			add_op("Como eu posso sobreviver ?", "Resposta 1")
+			add_op("Como eu escapo daqui ?", "Resposta 2")
 			add_op("Que lugar é esse ?", "Resposta 3")
 			add_op("Sair", "Sair")
 		
 		break;	
 			case "Resposta 1":
-				ds_grid_add_text("Não sei quem são, sempre aparecem aqui, tem um cara que taca musica nos outros destruindo tudo", spr_retrato, 0, "Personagem 1");
-				ds_grid_add_text("Destruindo tudo ? Esse cara que solta musica vai fazer nada", spr_retrato_player, 1, "Personagem 2");
+				ds_grid_add_text("Bem, pra voce sobreviver precisa aprender a se virar, você tem uma arma clonadora não ?", spr_dialogo, 0, "Zé Zezin");
+				ds_grid_add_text("Sim, tenho uma, mas pelo jeito acho que o estrago foi grande", spr_frog_dialogo, 1, "Player");
+				ds_grid_add_text("Você tem força para lutar contra eles, basta usar seu clone com o mouse, com o K podendo alterar sua alma com eles", spr_dialogo, 0, "Zé Zezin");
+				ds_grid_add_text("Você também pode trocar de alma com ele apertando K, e se você precisa desfazer dele aperte T, e lembre-se que uma caixa pode guardar coisas...", spr_dialogo, 0, "Zé Zezin");
 				
 				//add_op("Primeira Opção so que com mais texto", "Resposta 1")
-				add_op("Você mora aqui ?", "Resposta 2")
+				add_op("Como eu escapo daqui ?", "Resposta 2")
 				add_op("Que lugar é esse ?", "Resposta 3")
 				add_op("Sair", "Sair")
 				
@@ -29,10 +32,10 @@ function scr_textos(){
 		
 			break;
 			case "Resposta 2":
-				ds_grid_add_text("Não, fui jogado aqui faz tempo, não lembro nem quem foi o homem que me tacou nesse terror ", spr_retrato, 0, "Personagem 1");
-				ds_grid_add_text("Eu também não lembro, mas voce sabe de alguma pista ?", spr_retrato_player, 1, "Personagem 2");
-				ds_grid_add_text("Não, nunca passei por medo daquele monstro de fone... ", spr_retrato, 0, "Personagem 1");
-				add_op("Quem são essas pessoas ?", "Resposta 1")
+				ds_grid_add_text("Não tem como, nada vence a natureza meu jovem, mas se quiser tentar, se arrisque indo para a direita e tente chegar até o reator ", spr_dialogo, 0, "Zé Zezin");
+				ds_grid_add_text("Não sei ao certo, mas eu lembro que tinha salas seguras que você podia tirar um pouco da radiação ", spr_dialogo, 0, "Zé Zezin");
+				ds_grid_add_text("Muito obrigado pelas dicas, mas acho que vou tentar um pouco...", spr_frog_dialogo, 1, "Player");
+				add_op("Como eu posso sobreviver ?", "Resposta 1")
 				//add_op("Segunda Opção, voce vai pagar", "Resposta 2")
 				add_op("Que lugar é esse ?", "Resposta 3")
 				add_op("Sair", "Sair")
@@ -41,10 +44,10 @@ function scr_textos(){
 			break;
 		
 			case "Resposta 3":
-				ds_grid_add_text("Não sabemos, parece ser um purgatorio, tenho medo das coisas que tem mais pra frente", spr_retrato, 0, "Personagem 1");
-				ds_grid_add_text("Bem, tenho que explorar então, vou me vingar de todos", spr_retrato_player, 1, "Personagem 2");
-				add_op("Quem são essas pessoas ?", "Resposta 1")
-				add_op("Você mora aqui ?", "Resposta 2")
+				ds_grid_add_text("Fábricas funcionando até um tempo atrás, porém as ações humanas destruiram tudo", spr_dialogo, 0, "Zé Zezin");
+				ds_grid_add_text("Você acha que tem salvação ?", spr_frog_dialogo, 1, "Player");
+				add_op("Como eu posso sobreviver ?", "Resposta 1")
+				add_op("Que lugar é esse ?", "Resposta 2")
 				add_op("Sair", "Sair")
 				//add_op("Segunda Opção, voce vai pagar", "Resposta 2")
 				
@@ -62,6 +65,11 @@ function scr_textos(){
 				global.dialogo = false
 				instance_destroy(_dialogo)
 				
+			
+			break;
+			
+			case "Zé zezin":
+			ds_grid_add_text("Não sabemos, parece ser um purgatorio, tenho medo das coisas que tem mais pra frente", spr_retrato, 0, "Personagem 1");
 			
 			break;
 		

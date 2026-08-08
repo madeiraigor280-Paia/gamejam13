@@ -1,0 +1,1 @@
+global.radiacao = 0;

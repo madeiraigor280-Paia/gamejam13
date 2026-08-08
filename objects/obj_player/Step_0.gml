@@ -141,3 +141,7 @@ if (_is_block_h){
 }
 
 ds_list_destroy(_push_list)
+
+var _layer_hspeed = lerp(velh, 0.3, 0.1)
+
+layer_hspeed("bg_perto", velh / 10)
