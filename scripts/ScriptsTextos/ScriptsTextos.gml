@@ -20,7 +20,7 @@ function scr_textos(){
 				ds_grid_add_text("Bem, pra voce sobreviver precisa aprender a se virar, você tem uma arma clonadora não ?", spr_dialogo, 0, "Zé Zezin");
 				ds_grid_add_text("Sim, tenho uma, mas pelo jeito acho que o estrago foi grande", spr_frog_dialogo, 1, "Player");
 				ds_grid_add_text("Você tem força para lutar contra eles, basta usar seu clone com o mouse, com o K podendo alterar sua alma com eles", spr_dialogo, 0, "Zé Zezin");
-				ds_grid_add_text("Você também pode trocar de alma com ele apertando K, e se você precisa desfazer dele aperte T, e lembre-se que uma caixa pode guardar coisas...", spr_dialogo, 0, "Zé Zezin");
+				ds_grid_add_text("Você também pode trocar de alma com ele apertando G, e se você precisa desfazer dele aperte T, e lembre-se que uma caixa pode guardar coisas...", spr_dialogo, 0, "Zé Zezin");
 				
 				//add_op("Primeira Opção so que com mais texto", "Resposta 1")
 				add_op("Como eu escapo daqui ?", "Resposta 2")
@@ -47,7 +47,6 @@ function scr_textos(){
 				ds_grid_add_text("Fábricas funcionando até um tempo atrás, porém as ações humanas destruiram tudo", spr_dialogo, 0, "Zé Zezin");
 				ds_grid_add_text("Você acha que tem salvação ?", spr_frog_dialogo, 1, "Player");
 				add_op("Como eu posso sobreviver ?", "Resposta 1")
-				add_op("Que lugar é esse ?", "Resposta 2")
 				add_op("Sair", "Sair")
 				//add_op("Segunda Opção, voce vai pagar", "Resposta 2")
 				
