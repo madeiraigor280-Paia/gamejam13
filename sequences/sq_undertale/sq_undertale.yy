@@ -107,8 +107,8 @@
       ],"traits":0,},
     {"$GMAudioTrack":"","%Name":"undertale2","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AudioKeyframe>":"","Keyframes":[
           {"$Keyframe<AudioKeyframe>":"","Channels":{
-              "0":{"$AudioKeyframe":"","Id":{"name":"undertale2","path":"sounds/undertale2/undertale2.yy",},"Mode":0,"resourceType":"AudioKeyframe","resourceVersion":"2.0",},
-            },"Disabled":false,"id":"822a9f71-148d-44d9-8d7c-11efffe18386","IsCreationKey":false,"Key":0.0,"Length":196.44081,"resourceType":"Keyframe<AudioKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              "0":{"$AudioKeyframe":"","Id":{"name":"snd_intro","path":"sounds/snd_intro/snd_intro.yy",},"Mode":0,"resourceType":"AudioKeyframe","resourceVersion":"2.0",},
+            },"Disabled":false,"id":"8b74d4c0-6d14-496e-8b71-e6ccb58c5c8c","IsCreationKey":false,"Key":0.0,"Length":196.44081,"resourceType":"Keyframe<AudioKeyframe>","resourceVersion":"2.0","Stretch":false,},
         ],"resourceType":"KeyframeStore<AudioKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"undertale2","resourceType":"GMAudioTrack","resourceVersion":"2.0","trackColour":4282945010,"tracks":[
         {"$GMRealTrack":"","%Name":"position","builtinName":14,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[
               {"$Keyframe<RealKeyframe>":"","Channels":{

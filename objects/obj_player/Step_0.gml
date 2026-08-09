@@ -42,6 +42,12 @@ if (global.player1 == false)
 	velh = 0;
 	velv += gravidade;
 	
+	if (!instance_exists(obj_clone_player))
+	{
+		global.player1 = true	
+		
+	}
+	
 	exit;
 	
 	
@@ -50,6 +56,7 @@ if (global.player1 == false)
 else
 {
 	image_blend = c_white;
+	
 	
 	
 	
@@ -121,8 +128,11 @@ if (keyboard_check_pressed(ord("T")))
 		obj_clone_player.me_destruo = true
 		if (instance_exists(obj_arma_player))
 		{
-			obj_arma_player.ja_clonei_na_fase = false
-			obj_arma_player.clonei = false
+			if (!instance_exists(obj_clone_player))
+			{
+				obj_arma_player.ja_clonei_na_fase = false
+				obj_arma_player.clonei = false
+			}
 			
 			//global.tiro_clone = true
 			

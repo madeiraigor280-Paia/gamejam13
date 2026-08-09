@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"fnt_tutorial_1",
+  "%Name":"fnt_tutorial_2",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":12,
@@ -95,7 +95,7 @@
   "last":0,
   "lineHeight":12,
   "maintainGms1Font":false,
-  "name":"fnt_tutorial_1",
+  "name":"fnt_tutorial_2",
   "parent":{
     "name":"Fontes",
     "path":"folders/Fontes.yy",
