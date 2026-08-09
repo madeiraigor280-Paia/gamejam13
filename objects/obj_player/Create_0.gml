@@ -76,6 +76,7 @@ function input_player()
 	else if (_na_parede)
 	{
 		sprite_index = sprite_wall_jump
+		qtd_pulos = max_pulos;
 		
 	}
 	else{
@@ -130,6 +131,7 @@ function input_player()
 		if (_na_parede)
 		{
 			velv = 1;
+			qtd_pulos = max_pulos;
 			
 			if (_jump)
 			{

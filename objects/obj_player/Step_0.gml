@@ -172,4 +172,4 @@ if (keyboard_check_pressed(vk_f11))
     window_set_fullscreen(!_full);
 }
 
-show_debug_message(global.player1)
+show_debug_message(qtd_pulos)

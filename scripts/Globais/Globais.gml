@@ -4,7 +4,7 @@ global.tiro_clone = true;
 
 global.radiacao = 0
 
-global.sala_segura = level0_1
+global.sala_segura = rm_tutorial;
 
 global.mostra_hud = true
 

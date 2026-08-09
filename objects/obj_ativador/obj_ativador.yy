@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_ativador",
-    "path":"sprites/spr_ativador/spr_ativador.yy",
+    "name":"spr_ativador_2",
+    "path":"sprites/spr_ativador_2/spr_ativador_2.yy",
   },
   "spriteMaskId":null,
   "visible":true,
