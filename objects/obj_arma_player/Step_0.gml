@@ -45,7 +45,7 @@ if (_click)
 			{
 				var _tiro = instance_create_layer(_xx, _yy, "Instances", obj_tiro_2)
 				_tiro.direction = _dire
-				cooldown = 100
+				cooldown = 400
 			}
 			
 			
