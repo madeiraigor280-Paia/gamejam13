@@ -147,6 +147,7 @@
     {"id":{"name":"sala_segura0","path":"rooms/sala_segura0/sala_segura0.yy",},},
     {"id":{"name":"sala_segura1_5","path":"rooms/sala_segura1_5/sala_segura1_5.yy",},},
     {"id":{"name":"Globais","path":"scripts/Globais/Globais.yy",},},
+    {"id":{"name":"scr_clone","path":"scripts/scr_clone/scr_clone.yy",},},
     {"id":{"name":"scr_seq","path":"scripts/scr_seq/scr_seq.yy",},},
     {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
     {"id":{"name":"ScriptsTextos","path":"scripts/ScriptsTextos/ScriptsTextos.yy",},},
